@@ -7,4 +7,10 @@ class TexvcTest < Test::Unit::TestCase
     assert_not_nil image
     assert_equal Magick::Image, image.class
   end
+
+  def test_invalid_latex
+    assert_raise Texvc::UnknownFunctionError do
+      Texvc.parse('\foo')
+    end
+  end
 end

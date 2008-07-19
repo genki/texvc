@@ -3,7 +3,7 @@ require 'escape'
 require 'temp_dir'
 
 module Texvc
-  VERSION = '0.1.0'
+  VERSION = '0.1.1'
 
   class SyntaxError < StandardError; end
   class LexingError < StandardError; end
@@ -19,7 +19,7 @@ module Texvc
         cmd = Escape.shell_command(['texvc', tmp, tmp, latex, 'utf8'])
         result = nil
         IO.popen(%Q{#{cmd.to_s} 2>/dev/null}, 'r+') do |io|
-          io.puts latex
+          io.puts latex rescue nil
           result = io.gets
         end
       
