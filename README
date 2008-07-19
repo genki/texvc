@@ -10,6 +10,9 @@
 
 == Installation
 
+  You need to install texvc command before using this utility.
+  The command typically belongs to the package of mediawiki-math.
+
 === Archive Installation
 
 	rake install
