@@ -1,9 +1,12 @@
 
 = texvc
 
+  The wrapper utility for texvc command
 
 == Description
 
+  You can get the rendered image of an mathematical expression through this
+  utility.
 
 == Installation
 
@@ -21,6 +24,7 @@
 
 == Synopsis
 
+  Texvc.parse('y=x^2') # => an instance of Magick::Image
 
 == Copyright
 
