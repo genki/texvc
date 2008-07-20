@@ -1,22 +1,22 @@
 Gem::Specification.new do |s|
   s.name = %q{texvc}
-  s.version = "0.1.1"
+  s.version = "0.1.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Genki Takiuchi"]
   s.autorequire = %q{}
-  s.date = %q{2008-07-19}
-  s.description = %q{}
+  s.date = %q{2008-07-21}
+  s.description = %q{The wrapper utility for texvc command}
   s.email = %q{genki@s21g.com}
   s.extra_rdoc_files = ["README", "ChangeLog"]
   s.files = ["README", "ChangeLog", "Rakefile", "test/test_helper.rb", "test/texvc_test.rb", "lib/texvc.rb"]
   s.has_rdoc = true
-  s.homepage = %q{http://texvc.rubyforge.org}
+  s.homepage = %q{http://cocktail-party.rubyforge.org}
   s.rdoc_options = ["--title", "texvc documentation", "--charset", "utf-8", "--opname", "index.html", "--line-numbers", "--main", "README", "--inline-source", "--exclude", "^(examples|extras)/"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{texvc}
+  s.rubyforge_project = %q{cocktail-party}
   s.rubygems_version = %q{1.2.0}
-  s.summary = %q{}
+  s.summary = %q{The wrapper utility for texvc command}
   s.test_files = ["test/texvc_test.rb"]
 
   if s.respond_to? :specification_version then
