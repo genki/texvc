@@ -14,8 +14,8 @@ include FileUtils
 NAME              = "texvc"
 AUTHOR            = "Genki Takiuchi"
 EMAIL             = "genki@s21g.com"
-DESCRIPTION       = ""
-RUBYFORGE_PROJECT = "texvc"
+DESCRIPTION       = "The wrapper utility for texvc command"
+RUBYFORGE_PROJECT = "cocktail-party"
 HOMEPATH          = "http://#{RUBYFORGE_PROJECT}.rubyforge.org"
 BIN_FILES         = %w(  )
 VERS              = Texvc::VERSION
@@ -117,7 +117,7 @@ task :release => [:clean, :package] do |t|
 	pkg = "pkg/#{NAME}-#{VERS}"
 
 	require 'rubyforge'
-	rf = RubyForge.new
+	rf = RubyForge.new.configure
 	puts "Logging in"
 	rf.login
 
